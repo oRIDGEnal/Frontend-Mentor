@@ -1,0 +1,135 @@
+/* ------ CSS Variables ------ */
+:root {
+    /* Colours */
+    --white: #ffffff;
+    --lightGray: #D6E2F0;
+    --grayishBlue: #7B879D;
+    --darkBlue: #1F3251;
+
+    /* Screen Sizes */
+    --desktop: 1440px;
+    --mobile: 375px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: var(--lightGray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 20px;
+}
+
+.attribution {
+    margin-top: 2em;
+    text-align: center;
+}
+
+/* Card Styling */
+.card {
+    background: var(--white);
+    padding: 1.25em;
+    border-radius:15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card__img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card__text-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.card__text-container h1 {
+    color: var(--darkBlue);
+    font-weight: 700;
+}
+
+.card__text {
+    color: var(--grayishBlue);
+}
+
+/* Mobile Styling  */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    body {
+        height: 100vh !important;
+    }
+     .card {
+        width: 80% !important;
+     }
+     .attribution {
+        width: 80% !important;
+     }
+}
+
+/* Tablet Devices */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        height: 100vh !important;
+    }
+    .card {
+        width: 40% !important;
+    }
+    .attribution {
+       width: 40% !important;
+    }
+}
+
+/* Desktop Devices Small */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    body {
+        height: 100vh !important;
+    }
+    .card {
+        width: 30% !important;
+    }
+    .attribution {
+       width: 30% !important;
+    }
+}
+
+/* Desktop Devices Standard */
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+    body {
+        height: 90vh !important;
+    }
+    .card {
+        width: 20% !important;
+    }
+    .attribution {
+       width: 20% !important;
+    }
+}
+
+/* Desktop Devices Large */
+@media screen and (min-width: 2560px) {
+    body {
+        height: 90vh !important;
+    }
+    .card {
+        width: 15% !important;
+    }
+    .attribution {
+       width: 15% !important;
+    }
+}
